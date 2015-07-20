@@ -1,0 +1,19 @@
+# Dependencies
+markdown:         redcarpet
+gems:		  
+- jemoji
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            'Blog'
+tagline:          'Oblio blog.'
+description:      'Oblio rambling.'
+url:              http://blog.oblio360.com
+
+author:
+  name:           'Constantin Caraivan'
+  url:            https://twitter.com/oblio360
+
+paginate:         5
