@@ -2,10 +2,45 @@
 layout: default
 ---
 
+<!-- Facebook like -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=717375855033119";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- End of Facebook like -->
+
+<!-- Google plus -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<!-- End of Google plus -->
+
+<!-- Twitter share -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<!-- End of Twitter share -->
+
+<!-- Actual post -->
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
+</div>
+<!-- End of actual post -->
+
+<div class="social-container">
+    <!-- Facebook like -->
+    <div class="fb-like" data-layout="button_count" data-show-faces="false" data-share="false"></div>
+    <!-- End of Facebook like -->
+
+    <!-- Google plus -->
+    <div class="g-plusone"></div>
+    <!-- End of Google plus -->
+
+    <!-- Twitter share -->
+    <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+    <!-- End of Twitter share -->
 </div>
 
 <div class="related">
@@ -24,6 +59,7 @@ layout: default
   </ul>
 </div>
 
+<a name="comments">Comments</a>
 <div id="discourse-comments"></div>
 
 <script type="text/javascript">

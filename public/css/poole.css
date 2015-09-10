@@ -324,6 +324,29 @@ tbody tr:nth-child(odd) th {
   color: #9a9a9a;
 }
 
+/* Social buttons */
+.social-container {
+ text-align: center;
+}
+
+.fb-like {
+  position: relative;
+  top: -8px;
+}
+
+
+#___plusone_0 {
+  width: 63px !important;
+  position: relative;
+  left: 0px;
+}
+
+.twitter-share-button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 8px;
+}
+
 /* Related posts */
 .related {
   padding-top: 2rem;

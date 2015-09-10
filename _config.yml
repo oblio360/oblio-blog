@@ -1,6 +1,6 @@
 # Dependencies
 markdown:         redcarpet
-gems:		  
+gems:
 - jemoji
 
 # Permalinks
