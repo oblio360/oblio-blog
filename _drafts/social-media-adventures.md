@@ -1,6 +1,6 @@
 --- 
 layout: post 
-title: "Welcome to Hearthstone, you suck!" 
+title: "Social media adventures"
 ---
 
 At the very start of this project I decided that I'd follow these basic principles:
@@ -57,4 +57,4 @@ So first of all, I defined my problem:
     command scheduler such as cron and which monitors the source of the articles and does the actual publishing when it
     finds new content.
 
-Based on this definition and my current experience I decided to create a Python 3 utility to do this
+Based on this definition and principle #1 I decided to create a Python utility to do this.
