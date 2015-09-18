@@ -93,3 +93,5 @@ through and have the same success as he did.
 So I have a question for everyone protesting the entry of refugees in Europe: it's true that many of them are poor and
 uneducated, maybe even uncivilized and violent by Western standards. But do **you** think you would be any better if you
 lived your whole life in the kind of society they were brought up in?
+
+And when you propose a solution for any kind of crisis of this sort, keep that at least in the back of your mind.
