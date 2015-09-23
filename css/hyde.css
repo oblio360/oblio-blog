@@ -84,8 +84,10 @@ html {
 
 /* Sidebar nav */
 .sidebar-nav {
-  padding-left: 0;
+  margin-top: 10px;
+  padding-left: 5px;
   list-style: none;
+  border: 1px solid #fff;
 }
 .sidebar-nav-item {
   display: block;
@@ -96,6 +98,25 @@ a.sidebar-nav-item:focus {
 }
 .sidebar-nav-item.active {
   font-weight: bold;
+}
+
+.adslot_1  {
+  width: 260px;
+  height: 100px;
+}
+
+@media (min-height: 1100px) {
+  .adslot_1 {
+    width: 280px;
+    height: 550px;
+  }
+}
+
+.archive-box {
+  border: 1px solid #fff;
+  text-align: left;
+  padding-left: 5px;
+  list-style: none;
 }
 
 /* Sticky sidebar
