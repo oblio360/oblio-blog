@@ -20,7 +20,6 @@
  * Global resets
  * Sidebar
  * Container
- * Reverse layout
  * Themes
  */
 
@@ -61,10 +60,7 @@ html {
 }
 @media (min-width: 48rem) {
   .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
+    display: table-cell;
     width: 18rem;
     text-align: left;
   }
@@ -79,7 +75,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-size: 2rem;
+  font-size: 3.25rem;
 }
 
 /* Sidebar nav */
@@ -119,22 +115,6 @@ a.sidebar-nav-item:focus {
   list-style: none;
 }
 
-/* Sticky sidebar
- *
- * Add the `sidebar-sticky` class to the sidebar's container to affix it the
- * contents to the bottom of the sidebar in tablets and up.
- */
-
-@media (min-width: 48rem) {
-  .sidebar-sticky {
-    position: absolute;
-    right:  1rem;
-    bottom: 1rem;
-    left:   1rem;
-  }
-}
-
-
 /* Container
  *
  * Align the contents of the site above the proper threshold with some margin-fu
@@ -148,44 +128,24 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48rem) {
   .content {
-    max-width: 38rem;
-    margin-left: 20rem;
-    margin-right: 2rem;
+    display: table-cell;
+    max-width: 30rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
 @media (min-width: 64rem) {
   .content {
-    margin-left: 22rem;
-    margin-right: 4rem;
+    display: table-cell;
+    max-width: 46rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
 
-/*
- * Reverse layout
- *
- * Flip the orientation of the page by placing the `.sidebar` on the right.
- */
-
-@media (min-width: 48rem) {
-  .layout-reverse .sidebar {
-    left: auto;
-    right: 0;
-  }
-  .layout-reverse .content {
-    margin-left: 2rem;
-    margin-right: 20rem;
-  }
-}
-
-@media (min-width: 64rem) {
-  .layout-reverse .content {
-    margin-left: 4rem;
-    margin-right: 22rem;
-  }
-}
-
+/* Light blue */
 
 .theme-base .sidebar {
   background-color: #2979ff;
