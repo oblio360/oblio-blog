@@ -1,27 +1,26 @@
 <div class="container sidebar">
-    <div class="sidebar-about">
-      <a href="/"><h1>{{ site.title }}</h1></a>
+    <div class="logo-container">
+        <a href="/">
+            <img class="logo" src="https://oblio360.com/images/reference/oblio360_white_icon_400x200.png">
+        </a>
     </div>
+
+    <div class="menu-container">
+        <a class="menu-entry" href="//hearthstone.oblio360.com">Hearthstone</a>
+        <p class="menu-separator">&middot;</p>
+        <a class="menu-entry" href="//Dota.oblio360.com">Dota</a>
+        <p class="menu-separator">&middot;</p>
+        <a href="/about" class="menu-entry {% if page.title == 'About' %}active{% endif %}">About</a>
+    </div>
+
+    <ul class="archive-box">
+        <a href="/archive"><b>Recent articles</b></a>
+        {% for post in site.posts limit:10 %}
+        <li class="archive-list"><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
 
     {% include ads.html %}
 
-    <ul class="sidebar-nav">
-      <li class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}">
-      <a href="/">Home</a>
-      </li>
-      <li class="sidebar-nav-item{% if page.title == "About" %} active{% endif %}">
-      <a href="/about">About</a>
-      </li>
-      <li><a href="//dota.oblio360.com">Dota</a></li>
-      <li><a href="//hearthstone.oblio360.com">Hearthstone</a></li>
-    </ul>
-
-    <ul class="archive-box">
-      <a href="/archive"><b>Recent articles</b></a>
-      {% for post in site.posts limit:4 %}
-      <li class="archive-list"><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-
-    {% include license.html %} <p class="license-text">&copy;{{ site.time | date: '%Y' }} Oblio 360</p>
+    {% include license.html %}
 </div>
