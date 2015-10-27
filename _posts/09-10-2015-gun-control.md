@@ -150,4 +150,4 @@ Then, again, tackle that. Increase the budget for the police, legalize lighter d
 criminal action against users to helping them as you would help anyone with psychological issues.
 
 Anyway, enough with all the serious comments, here's something a bit funnier about the topic:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bHY48Q2UBVk" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/bHY48Q2UBVk" frameborder="0" allowfullscreen></iframe>
