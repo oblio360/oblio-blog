@@ -34,7 +34,7 @@ I'd say that the show is a must-see for a history buff, especially if that histo
 
 So, if you want to get started quickly: [The Great War 101](https://www.youtube.com/watch?v=3LOaNzQbi00):
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3LOaNzQbi00" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/3LOaNzQbi00" frameborder="0" allowfullscreen></iframe>
 
 Highlights from the show, in case you don't have time to go through the entire collection:
 
