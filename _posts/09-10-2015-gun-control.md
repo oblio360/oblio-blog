@@ -1,6 +1,7 @@
 --- 
 layout: post 
 title: "On guns and gun control"
+tags: [ personal ]
 ---
 
 This post will seem a bit out of place on this blog. It's more of a philosophical discussion than anything related to

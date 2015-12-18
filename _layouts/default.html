@@ -7,8 +7,13 @@
 
     {% include sidebar.html %}
 
-    <div class="content container">
-      {{ content }}
+    <div class="content-container">
+
+      {% include ads.html %}
+
+      <div class="content">
+        {{ content }}
+      </div>
     </div>
 
   </body>

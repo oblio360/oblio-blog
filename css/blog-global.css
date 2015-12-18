@@ -1,0 +1,444 @@
+/* Some quirks mode stuff for compatibility. */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #515151;
+    background-color: #e8e8e8;
+    /* Mobile stuff. */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+@media(min-width: 768px) {
+  html, body {
+      font-size: 20px;
+      background-image: url('/images/common/background.jpg');
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-attachment: fixed;
+  }
+}
+
+
+@media(min-width: 640px) {
+    body {
+        display: table;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: 2rem;
+}
+@media(max-width: 48rem) {
+    h1 {
+        font-size: 1.3rem;
+    }
+}
+
+h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+@media(max-width: 48rem) {
+    h2 {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+h3 {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+}
+@media(max-width: 48rem) {
+    h2 {
+        margin-top: 1.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+h4, h5, h6 {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+/* Body text */
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+strong {
+    color: #303030;
+}
+
+ul, ol, dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: .5rem;
+}
+
+hr {
+    position: relative;
+    margin: 1.5rem 0;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #fff;
+}
+
+abbr {
+    font-size: 85%;
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+}
+
+abbr[title] {
+    cursor: help;
+    border-bottom: 1px dotted #e5e5e5;
+}
+
+code, pre {
+    font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+code {
+    padding: .25em .5em;
+    font-size: 85%;
+    color: #bf616a;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+}
+
+pre {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: .8rem;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f9f9f9;
+}
+
+pre code {
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+    background-color: transparent;
+}
+
+.highlight {
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.highlight pre {
+    margin-bottom: 0;
+}
+
+blockquote {
+    padding: .5rem 1rem;
+    margin: .8rem 0;
+    color: #7a7a7a;
+    border-left: .25rem solid #e5e5e5;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+@media (min-width: 30rem) {
+    blockquote {
+        padding-right: 5rem;
+        padding-left: 1.25rem;
+    }
+}
+
+img {
+    display: inline;
+    margin: 0 0 0.3rem;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+table {
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: .25rem .5rem;
+    border: 1px solid #e5e5e5;
+}
+
+tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
+    background-color: #f9f9f9;
+}
+
+/* Sidebar - Starts out above content on mobile and later moves to the side with wider viewports. */
+.sidebar {
+    text-align: center;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left:  auto;
+    margin-right: auto;
+}
+@media (min-width: 640px) and (max-width: 767px) {
+  .sidebar {
+      display: table-cell;
+      width: 200px;
+      text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  .sidebar {
+      display: table-cell;
+      width: 260px;
+      text-align: left;
+  }
+}
+
+/* For larger screens: add a fixed position container that will stay on the screen as the page scrolls. */
+@media (min-width: 640px) and (max-width: 767px) {
+    .sliding-container {
+        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 10px;
+    }
+}
+@media(min-width: 768px) {
+    .sliding-container {
+        width: 260px;
+        position: fixed;
+        top: 10px;
+    }
+}
+
+.logo-container {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px #505050;
+}
+
+.logo {
+    margin-top: 0.8em;
+    width: 120px;
+    height: 60px;
+
+}
+@media(min-width: 640px) {
+    .logo {
+        width: 200px;
+        height: 100px;
+    }
+}
+
+.menu-container {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px #505050;
+}
+
+.menu-separator {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+
+.sidebar a.menu-entry {
+    font-family: Ubuntu, sans-serif;
+    color: #ffffff;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.sidebar a:hover, a:focus {
+    text-decoration: underline;
+}
+
+.tag-box, .archive-box {
+    width: 100%;
+    padding-left: 0;
+    box-shadow: 0 1px 3px #505050;
+    background-color: #ffffff;
+}
+
+@media(max-width: 767px) {
+    .tag-box, .archive-box {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+@media(min-width: 768px) {
+    .tag-box, .archive-box {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-height: 900px) and (min-width: 768px) {
+    .tag-box {
+        margin-bottom: 10px;
+    }
+    .archive-box {
+        display: none;
+    }
+}
+
+.tag-title, .archive-title {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+}
+
+.tag-element {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.archive-element {
+    font-size: 0.8rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+@media(max-width: 639px) {
+    .tag-list, .archive-list {
+        display: none;
+    }
+}
+
+.tag-element, .archive-element {
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.license-box {
+    text-align: center;
+    padding-top: 10px;
+}
+
+@media(max-height: 600px) {
+    .license-box {
+        padding-top: 0px;
+    }
+}
+
+a.license:hover, a.license:focus {
+    text-decoration: none;
+}
+
+.license-image {
+    height: 20px;
+    width: 20px;
+}
+
+.ads {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.adslot_1 {
+    width: 320px;
+    height: 100px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .adslot_1 {
+        width: 468px;
+        height: 60px;
+    }
+}
+@media (min-width: 1200px) {
+    .adslot_1 {
+        width: 728px;
+        height: 90px;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .content-container {
+    display: table-cell;
+      padding-top: 0.5rem;
+      padding-right: 0;
+      padding-left: 30px;
+      padding-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .content-container {
+    display: table-cell;
+      padding-top: 0.5rem;
+      padding-right: 0;
+      padding-left: 30px;
+      padding-bottom: 0;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+    .content {
+        max-width: 370px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .content {
+        max-width: 470px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .content {
+        max-width: 80ch;
+    }
+}

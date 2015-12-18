@@ -1,12 +1,30 @@
-.menu-container {
-    background-color: #2979ff;
-}
-
 .sidebar a {
     color: #2979ff;
+}
+
+.tag-title a, .archive-title a {
+    color: #ffffff;
 }
 
 .theme-base .content a,
 .theme-base .related-posts li a:hover {
     color: #2979ff;
+}
+
+.menu-container {
+    background-color: #2979ff;
+}
+
+.tag-title, .archive-title {
+    background-color: #2979ff;
+}
+
+.fa-tag {
+    background-color: #2979ff;
+    color: #ffffff;
+}
+
+.theme-base a.tag {
+    background-color: #2979ff;
+    color: #ffffff;
 }

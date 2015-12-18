@@ -1,6 +1,7 @@
 --- 
 layout: post 
-title: "Impostors and refugees" 
+title: "Impostors and refugees"
+tags: [ personal ]
 ---
 
 I "hang out" on the internet quite a bit. I visit various forums and read blogs. I'm generally interested in history, science,

@@ -1,0 +1,10 @@
+- slug: history
+  name: History
+- slug: book
+  name: Book
+- slug: programming
+  name: Programming
+- slug: technology
+  name: Technology
+- slug: personal
+  name: Personal

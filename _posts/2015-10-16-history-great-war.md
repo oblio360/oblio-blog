@@ -1,6 +1,7 @@
 --- 
 layout: post 
 title: "History Gems: The Great War"
+tags: [ history ]
 ---
 
 Hello there!
