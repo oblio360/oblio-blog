@@ -442,3 +442,54 @@ a.license:hover, a.license:focus {
         max-width: 80ch;
     }
 }
+
+.about {
+    display: none;
+}
+
+@media (min-width: 1600px) {
+    .about {
+        display: block;
+        width: 390px;
+        position: fixed;
+        top: 110px;
+        right: 0px;
+        background-color: #ffffff;
+        box-shadow: 0 1px 3px #505050;
+        padding: 1em;
+    }
+}
+
+.motto {
+    margin-top: 10px;
+}
+
+.about-social {
+    display: none;
+}
+@media (min-width: 1600px) {
+    .about-social {
+        display: block;
+        width: 70px;
+        position: fixed;
+        top: 320px;
+        right: 0px;
+        background-color: #ffffff;
+        box-shadow: 0 1px 3px #505050;
+        text-align: center;
+        font-size: 120%;
+        line-height: 2.5;
+    }
+}
+
+.fa-envelope-o {
+    color: #515151;
+}
+
+.fa-facebook-official {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: #37caf4;
+}

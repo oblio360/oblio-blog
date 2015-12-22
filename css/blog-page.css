@@ -63,9 +63,18 @@
   padding-right: 5px;
 }
 
+.post-extras {
+  background-color: #ffffff;
+  padding-bottom: 1em;
+  box-shadow: 0px 1px 5px #b0b0b0;
+  padding-left: 1em;
+}
+
 /* Social buttons */
 .social-container {
- text-align: center;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .fb-like {
@@ -88,9 +97,8 @@
 
 /* Related posts */
 .related {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-top: 1px solid #eee;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .related-posts {
   padding-left: 0;
@@ -126,6 +134,8 @@
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 5px #b0b0b0;
 }
 
 /* Pagination items can be `span`s or `a`s */
