@@ -369,7 +369,7 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
 
 @media(max-height: 600px) {
     .license-box {
-        padding-top: 0px;
+        padding-top: 0;
     }
 }
 
@@ -431,9 +431,15 @@ a.license:hover, a.license:focus {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 959px) {
     .content {
         max-width: 470px;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1199px) {
+    .content {
+        max-width: 580px;
     }
 }
 
@@ -453,7 +459,7 @@ a.license:hover, a.license:focus {
         width: 390px;
         position: fixed;
         top: 110px;
-        right: 0px;
+        right: 0;
         background-color: #ffffff;
         box-shadow: 0 1px 3px #505050;
         padding: 1em;
@@ -467,13 +473,15 @@ a.license:hover, a.license:focus {
 .about-social {
     display: none;
 }
-@media (min-width: 1600px) {
+@media (min-width: 680px) and (max-width: 760px),
+    (min-width: 840px) and (max-width: 1190px),
+    (min-width: 1260px) {
     .about-social {
         display: block;
         width: 70px;
         position: fixed;
         top: 320px;
-        right: 0px;
+        right: 0;
         background-color: #ffffff;
         box-shadow: 0 1px 3px #505050;
         text-align: center;
