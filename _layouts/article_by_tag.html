@@ -2,23 +2,37 @@
 layout: default
 ---
 
-<div class="page">
-    {% include pin.html %}
+<div class="posts">
     <h1 class="page-title">{{ page.title }}</h1>
 
-    <h1>Articles tagged: {{ page.tag }}.</h1>
-    <ul>
-        {% if site.tags[page.tag] %}
-            {% for post in site.tags[page.tag] %}
-                <li>
-                    <a href="{{ post.url }}">{{post.title}}</a>
-                    <br>
-                    <b>{{ post.date | date: '%-d %B %Y' }}</b>
-                    <br>
-                </li>
-            {% endfor %}
-        {% else %}
-            <p>There are no articles with this tag.</p>
-        {% endif %}
-    </ul>
+    {% if site.tags[page.tag] %}
+        {% for post in site.tags[page.tag] %}
+            <div class="post">
+                {% include pin.html %}
+                <h1 class="post-title">
+                    <a href="{{ post.url }}">
+                        {{ post.title }}
+                    </a>
+                </h1>
+
+                <span class="post-date">{{ post.date | date_to_string }}</span>
+
+                {{ post.content }}
+
+                <a href="{{ post.url }}#comments">See comments</a>
+
+                <hr>
+            </div>
+        {% endfor %}
+    {% else %}
+        <div class="page">
+            <h1>No articles yet</h1>
+            <p>
+                There are no articles with this tag.
+                <br>
+                Instead, you can find articles about related topics over <a href="/">here</a>.
+            </p>
+        </div>
+    {% endif %}
+
 </div>
