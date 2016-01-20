@@ -1,0 +1,21 @@
+---
+layout: null
+---
+
+{
+        "articles": {
+          {% for post in site.posts %}
+            "{{ post.title }}": {
+              "id": "{{ site.url }}{{ post.id }}",
+              "url": "{{ site.url }}{{ post.url }}",
+              "date": "{{ post.date | date_to_xmlschema }}",
+              "tags": [{% for tag in post.tags %} "{{ tag }}", {% endfor %} null]
+            },
+          {% endfor %}
+          "": ""
+        }
+}
+
+
+
+

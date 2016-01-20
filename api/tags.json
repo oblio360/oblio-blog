@@ -1,0 +1,13 @@
+---
+layout: null
+---
+
+
+{
+  "tags": {
+    {% for tag in site.data.tags %}
+        "{{ tag.name }}": "{{ site.url }}/tag/{{ tag.slug }}/",
+    {% endfor %}
+        "": ""
+  }
+}
