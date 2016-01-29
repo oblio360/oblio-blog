@@ -1,10 +1,15 @@
 - slug: history
   name: History
+  group: History
 - slug: book
   name: Book
+  group: Books
 - slug: programming
   name: Programming
+  group: Programming
 - slug: technology
   name: Technology
+  group: Technology
 - slug: personal
   name: Personal
+  group: Personal

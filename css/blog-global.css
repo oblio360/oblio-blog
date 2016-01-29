@@ -21,13 +21,13 @@ html, body {
     -ms-text-size-adjust: 100%;
 }
 @media(min-width: 768px) {
-  html, body {
-      font-size: 20px;
-      background-image: url('/images/common/background.jpg');
-      background-repeat: no-repeat;
-      background-position: left top;
-      background-attachment: fixed;
-  }
+    html, body {
+        font-size: 20px;
+        background-image: url('/images/common/background.jpg');
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-attachment: fixed;
+    }
 }
 
 
@@ -221,18 +221,18 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
     margin-right: auto;
 }
 @media (min-width: 640px) and (max-width: 767px) {
-  .sidebar {
-      display: table-cell;
-      width: 200px;
-      text-align: left;
-  }
+    .sidebar {
+        display: table-cell;
+        width: 200px;
+        text-align: left;
+    }
 }
 @media (min-width: 768px) {
-  .sidebar {
-      display: table-cell;
-      width: 260px;
-      text-align: left;
-  }
+    .sidebar {
+        display: table-cell;
+        width: 260px;
+        text-align: left;
+    }
 }
 
 /* For larger screens: add a fixed position container that will stay on the screen as the page scrolls. */
@@ -275,12 +275,19 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
 }
 
 .menu-container {
-    text-align: center;
     font-size: 1.2rem;
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     box-shadow: 0 1px 3px #505050;
+}
+@media(min-width: 640px) {
+    .menu-container {
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 .menu-separator {
@@ -386,43 +393,48 @@ a.license:hover, a.license:focus {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
-.adslot_1 {
-    width: 320px;
-    height: 100px;
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-    .adslot_1 {
-        width: 468px;
-        height: 60px;
+@media (min-width: 640px) and (max-width: 767px) {
+    .ads {
+        max-width: 370px;
     }
 }
+
+@media (min-width: 768px) and (max-width: 959px) {
+    .ads {
+        max-width: 470px;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1199px) {
+    .ads {
+        max-width: 580px;
+    }
+}
+
 @media (min-width: 1200px) {
-    .adslot_1 {
-        width: 728px;
-        height: 90px;
+    .ads {
+        max-width: 80ch;
     }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
-  .content-container {
-    display: table-cell;
-      padding-top: 0.5rem;
-      padding-right: 0;
-      padding-left: 30px;
-      padding-bottom: 0;
-  }
+    .content-container {
+        display: table-cell;
+        padding-top: 0.5rem;
+        padding-right: 0;
+        padding-left: 30px;
+        padding-bottom: 0;
+    }
 }
 
 @media (min-width: 768px) {
-  .content-container {
-    display: table-cell;
-      padding-top: 0.5rem;
-      padding-right: 0;
-      padding-left: 30px;
-      padding-bottom: 0;
-  }
+    .content-container {
+        display: table-cell;
+        padding-top: 0.5rem;
+        padding-right: 0;
+        padding-left: 30px;
+        padding-bottom: 0;
+    }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
@@ -447,6 +459,11 @@ a.license:hover, a.license:focus {
     .content {
         max-width: 80ch;
     }
+}
+
+.excerpt {
+    overflow: hidden;
+    max-height: 600px;
 }
 
 .about {
@@ -474,13 +491,13 @@ a.license:hover, a.license:focus {
     display: none;
 }
 @media (min-width: 680px) and (max-width: 760px),
-    (min-width: 840px) and (max-width: 1190px),
-    (min-width: 1260px) {
+(min-width: 840px) and (max-width: 1190px),
+(min-width: 1260px) {
     .about-social {
         display: block;
         width: 70px;
         position: fixed;
-        top: 320px;
+        top: 300px;
         right: 0;
         background-color: #ffffff;
         box-shadow: 0 1px 3px #505050;
@@ -488,6 +505,11 @@ a.license:hover, a.license:focus {
         font-size: 120%;
         line-height: 2.5;
     }
+}
+
+
+.fa-home {
+    color: #515151;
 }
 
 .fa-envelope-o {

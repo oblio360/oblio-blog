@@ -23,8 +23,8 @@
 
 .page,
 .post {
-  margin-bottom: 4em;
-  padding-top: 1em;
+  margin-bottom: 1em;
+  padding-top: 0.5em;
   padding-bottom: 1em;
   padding-left: 1em;
   padding-right: 1em;
@@ -130,7 +130,7 @@
 /*
  * Pagination
  *
- * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+ * Super lightweight (HTML-wise) blog pagination. `span`s are provided for when
  * there are no more previous or next posts to show.
  */
 

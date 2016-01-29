@@ -6,33 +6,33 @@ layout: default
     <h1 class="page-title">{{ page.title }}</h1>
 
     {% if site.tags[page.tag] %}
-        {% for post in site.tags[page.tag] %}
-            <div class="post">
-                {% include pin.html %}
-                <h1 class="post-title">
-                    <a href="{{ post.url }}">
-                        {{ post.title }}
-                    </a>
-                </h1>
+    {% for post in site.tags[page.tag] %}
+    <div class="post">
+        {% include pin.html %}
+        <h1 class="post-title">
+            <a href="{{ post.url }}">
+                {{ post.title }}
+            </a>
+        </h1>
 
-                <span class="post-date">{{ post.date | date_to_string }}</span>
+        <span class="post-date">{{ post.date | date_to_string }}</span>
 
-                {{ post.content }}
+        <div class="excerpt">{{ post.content | truncatewords: 200 }}</div>
 
-                <a href="{{ post.url }}#comments">See comments</a>
+        <br>
 
-                <hr>
-            </div>
-        {% endfor %}
+        <a href="{{ post.url }}">... Read more</a>
+    </div>
+    {% endfor %}
     {% else %}
-        <div class="page">
-            <h1>No articles yet</h1>
-            <p>
-                There are no articles with this tag.
-                <br>
-                Instead, you can find articles about related topics over <a href="/">here</a>.
-            </p>
-        </div>
+    <div class="page">
+        <h1>No articles yet</h1>
+        <p>
+            There are no articles with this tag.
+            <br>
+            Instead, you can find articles about related topics over <a href="/">here</a>.
+        </p>
+    </div>
     {% endif %}
 
 </div>
