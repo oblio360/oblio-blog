@@ -1,0 +1,13 @@
+{% if include.left %}
+  {% if include.jpg %}
+  <img alt="{{ include.alt }}" src="/images/common/{{ include.alt | downcase | replace: ' ', '-' }}.jpg" style="float: left;">
+  {% else %}
+  <img alt="{{ include.alt }}" src="/images/common/{{ include.alt | downcase | replace: ' ', '-' }}.png" style="float: left;">
+  {% endif %}
+{% else %}
+  {% if include.jpg %}
+  <img alt="{{ include.alt }}" src="/images/common/{{ include.alt | downcase | replace: ' ', '-' }}.jpg" style="float: right;">
+  {% else %}
+  <img alt="{{ include.alt }}" src="/images/common/{{ include.alt | downcase | replace: ' ', '-' }}.png" style="float: right;">
+  {% endif %}
+{% endif %}
