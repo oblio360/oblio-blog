@@ -10,21 +10,9 @@
 - slug: technology
   name: Technology
   group: Technology
-- slug: personal
-  name: Personal
-  group: Personal
 - slug: guide
   name: Guide
   group: Guides
-- slug: news
-  name: News
-  group: News
 - slug: opinion
   name: Opinion
   group: Opinions
-- slug: deck
-  name: Deck
-  group: Decks
-- slug: crafting
-  name: Crafting
-  group: Crafting
