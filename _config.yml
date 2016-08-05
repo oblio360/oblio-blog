@@ -1,7 +1,10 @@
 # Dependencies
-markdown:         redcarpet
-redcarpet:
-  extensions: [ "strikethrough", "no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "space_after_headers", "underline", "highlight", "footnotes", "superscript" ]
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 
 gems:
 - jemoji
