@@ -8,6 +8,7 @@ kramdown:
 
 gems:
 - jemoji
+- jekyll-paginate
 - jekyll-sitemap
 
 # Permalinks
