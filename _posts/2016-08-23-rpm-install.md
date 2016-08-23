@@ -28,7 +28,7 @@ I'll disect one of the rpmspec files:
     %define          debug_package %{nil}
     %define        __os_install_post %{_dbpath}/brp-compress
 
-A bit of boilerplate. As a note, everything starting with "%" defined a rpmspec section, so it's important.
+A bit of boilerplate. As a note, everything starting with "%" defines a rpmspec section, so it's important.
 
     Summary: A test dependency rpm package
     Name: testdependency
@@ -46,31 +46,31 @@ Package metadata. Out of these, name, version and release are important as they 
 Kind of self explanatory: RPM build root.
 
     %description
-     %{summary}
+    %{summary}
 
 Again, kind of self explanatory: package description/summary.
 
     %prep
-     # Empty section
+    # Empty section
 
 The [rpm build preparation phase/script](http://www.rpm.org/max-rpm/s1-rpm-inside-scripts.html).
 
     %build
-     # Empty section.
+    # Empty section.
 
 The actual rpm build phase/script. In this case it doesn't do anything since the package isn't fancy.
 
-    %clean
+     %clean
      rm -rf %{buildroot}
 
 Build clean up.
 
-   %pre
+    %pre
     echo 'Hello from the pre-install script.'
 
 Pre-install script. This script is run just before the actual installation.
 
-   %install
+    %install
     rm -rf %{buildroot}
     mkdir -p  %{buildroot}
 
@@ -79,17 +79,17 @@ Pre-install script. This script is run just before the actual installation.
 
 Actual installation: copies all the files to their destination.
 
-    %post
+     %post
      echo 'Hello from the post-install script.'
 
 Post install script. Run immediately after the installation.
 
-    %preun
+     %preun
      echo 'Hello from the preun-install script'
 
 Pre uninstall script.
 
-    %postun
+     %postun
       echo 'Hello from the postun-install script'
 
 Post uninstall script.
@@ -105,9 +105,11 @@ Files included in the installation. This section uses [two RPM files directives]
 * deffattr defines file attributes: permissions and ownership; we keep the original permissions and set the ownership to root:root
 * config marks the conf files as config files so that they get special treatment from RPM when installed
 
+And the last bit:
+
     %changelog
-     * Tue Aug 23 2016 Oblio Point <oblio@oblio360.com> 1.0-1
-     - First Build
+    Tue Aug 23 2016 Oblio Point <oblio@oblio360.com> 1.0-1
+    First Build
 
 Human readable changelog.
 
